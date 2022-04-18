@@ -6,7 +6,7 @@ function App() {
   return (
     //BEM naming convertion
     <div className="App">
-      <h1>Lets build a Facebook clone App.js</h1>
+      
       <Header/>
       <Body/>
       
