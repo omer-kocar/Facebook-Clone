@@ -1,53 +1,36 @@
-.header-left > img {
-  height: 40px;
-}
 .header-left {
   display: flex;
   align-items: center;
 }
-.header-middle > .flex {
-  display: flex;
-  margin-left: 1.5rem;
-}
 
 .header-icons {
   cursor: pointer;
-  display: flex;
-  align-items: center; 
-  margin-left: 1.5rem;
-  padding: 20px;
+  font-size: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 0.75rem;
- 
+  padding-left: 32px;
+  padding-right: 32px;
 }
-
-.header-icons:hover{
-    background-color: lightgray;
-    color: rgb(58, 87, 145);
+.header-icons:hover {
+  background-color: rgba(215, 215, 215, 0.1);
+  color: rgb(217, 225, 242);
+  transition: 0.3s;
 }
-
-
-.header > .header-middle {
+.flex {
   color: rgb(125, 125, 125);
-  padding-left: 10px;
-}
-.header-right > img {
-  height: 28px;
-  border-radius: 50%;
-}
-.header-right {
   display: flex;
-  align-items: center;
-  
 }
-.header > .header-right {
-  color: #428edc;
-}
+
 .header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 8px;
   border: 1px solid rgb(58, 59, 60);
   background-color: #252525;
+  position: sticky;
+  top: 0;
 }
 
 .input-search {
@@ -57,7 +40,8 @@
   border: transparent;
   background-color: rgb(58, 59, 60);
   outline: none;
-  border-bottom-width: 2px; 
+  border-bottom-width: 2px;
+  color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -72,5 +56,49 @@
   border-radius: 16px;
   display: flex;
   align-items: center;
-  flex-direction: row;
+}
+.header-right > img {
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+}
+.header-right {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 7px;
+  border-radius: 32px;
+}
+.header-right:hover {
+  background-color: rgba(215, 215, 215, 0.1);
+  transition: 0.3s;
+}
+
+.header-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(173, 173, 173);
+  padding-left: 20px;
+}
+.header-icons-right {
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 0.75rem;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  background-color: rgb(58, 59, 60);
+  align-items: center;
+  padding-left: 10px;
+  margin-left: 8px;
+}
+.header-right-icons {
+  display: flex;
+  align-items: center;
+}
+.header-icons-right:hover {
+  color: white;
+  transition: 0.3s;
 }

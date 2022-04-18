@@ -6,8 +6,8 @@ function HeaderIcon({Icon}) {
   return (
     
     <div className='header-icons'>
+        <Icon />
         
-        <Icon className="icons" />
     </div>
   )
 }
